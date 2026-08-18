@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+*.env
+Final_Project/mytoken.py
