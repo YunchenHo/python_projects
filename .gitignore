@@ -5,3 +5,6 @@ __pycache__/
 .idea/
 *.env
 Final_Project/mytoken.py
+
+# 大型資料檔（超過 GitHub 100MB 單檔限制，不適合放版控）
+*.csv
