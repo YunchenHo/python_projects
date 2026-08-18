@@ -22,6 +22,11 @@
 ### PracForLecture — 上課練習
 隨堂練習程式碼（猜數字遊戲邏輯、九宮格、`itertools`/`random` 練習等）。
 
+### Python 期貨交易專案 — 外匯回測策略
+用 [Backtesting.py](https://kernc.github.io/backtesting.py/) 對 EUR/USD 分鐘線資料做交易策略回測。
+- `Python_期貨交易專案.ipynb`：策略邏輯與回測結果，設計上是在 Google Colab 執行（會掛載 Google Drive 讀取資料）
+- `EURUSD_M1_train.csv`（**未上傳**）：訓練用的分鐘線歷史資料，檔案約 106MB 超過 GitHub 單檔 100MB 上限，已列在 `.gitignore`。要跑這個 notebook 需自行準備同格式的 EUR/USD M1 資料並放在同一資料夾下
+
 ## 執行前準備
 
 1. 建立並啟用虛擬環境：
@@ -42,3 +47,5 @@
    此檔案已列在 `.gitignore`，不會被提交，避免 token 外洩。
 
 4. `HW` 與 `Midterm_Project` 內的腳本使用 `pyautogui` 做螢幕自動化，僅在有畫面的 Windows 環境下可執行，且部分腳本（如 `hw1.py`~`hw3.py`）會呼叫 PowerShell 切換輸入法，僅限 Windows。
+
+5. `Python 期貨交易專案` 的 notebook 是設計在 Google Colab 上執行（會用 `google.colab.drive` 掛載雲端硬碟），本機執行前需自行調整資料讀取路徑。
